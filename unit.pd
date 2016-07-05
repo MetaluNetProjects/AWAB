@@ -1,0 +1,23 @@
+#N canvas 566 471 450 300 10;
+#X obj 103 120 channel \$1 0;
+#X obj 103 157 channel \$1 1;
+#X obj 252 55 r measure-\$1-0;
+#X obj 277 80 r measure-\$1-1;
+#X obj 252 174 -;
+#X obj 277 104 t b f;
+#X obj 252 131 pack f f;
+#X obj 252 152 t a a;
+#X obj 282 174 +;
+#X obj 287 203 /;
+#X obj 105 210 nbx 5 14 -1e+37 1e+37 0 0 measure-diff-\$1 measure-diff-\$1
+measure-diff-\$1 0 -8 0 10 -262144 -1 -1 -81.2573 256;
+#X obj 252 229 s measure-diff-\$1;
+#X connect 2 0 6 0;
+#X connect 3 0 5 0;
+#X connect 4 0 11 0;
+#X connect 5 1 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 7 1 8 0;
+#X connect 8 0 9 1;
+#X coords 0 -1 1 1 90 130 1 100 100;

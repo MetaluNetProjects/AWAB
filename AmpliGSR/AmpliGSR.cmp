@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = lun. 30 mai 2016 14:51:04 CEST
+
+BeginCmp
+TimeStamp = /574C3E00;
+Reference = C1;
+ValeurCmp = 100n;
+IdModule  = Capacitors_ThroughHole:C_Rect_L7_W2_P5;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C2E39;
+Reference = C2;
+ValeurCmp = 100n;
+IdModule  = Capacitors_ThroughHole:C_Rect_L7_W2_P5;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C3145;
+Reference = P1;
+ValeurCmp = CONN_01X01;
+IdModule  = Connect:1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C3106;
+Reference = P2;
+ValeurCmp = CONN_01X01;
+IdModule  = Connect:1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C43EF;
+Reference = P3;
+ValeurCmp = CONN_01X03;
+IdModule  = Connectors_Molex:Molex_KK_6410-03;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C2A2B;
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C2A6C;
+Reference = R2;
+ValeurCmp = 1k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C2BB5;
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C2C27;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C2C5D;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C36A7;
+Reference = R6;
+ValeurCmp = 2.2k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C37D0;
+Reference = R7;
+ValeurCmp = 47k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C3737;
+Reference = R8;
+ValeurCmp = 2.2k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C3ACE;
+Reference = R9;
+ValeurCmp = 47k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C40A7;
+Reference = R10;
+ValeurCmp = 2.2k;
+IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /574C29FA;
+Reference = U1;
+ValeurCmp = LM324N;
+IdModule  = Housings_DIP:DIP-14_W7.62mm_LongPads;
+EndCmp
+
+EndListe

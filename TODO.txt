@@ -1,0 +1,21 @@
+poids
+mesures complémentaires (horizontales + inter-phalanges)
+2 leds
+1 ruban led 12v
+interface reseau (osc, messagepack, protocolbuffer...) :
+
+ input : 
+  - clearOffset
+  - select A B (0-15)
+  - getMesure
+  - getWeight
+  - handCapture
+  - light 0-1000
+  - leds A B
+  - get
+  
+ output : 
+  - m XXX (mesure)
+  - w XXX
+  - hc XXX XXX XXX (...) (35 valeur des mesures de la main)
+  
