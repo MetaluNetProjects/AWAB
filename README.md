@@ -14,3 +14,9 @@ PureData driver patch & test network client.
 metalu.net 2016
 
 
+-----
+
+1) launch : pd 0main.pd
+2) for test : pd 0testClient.pd ; connect ; try commands.
+
+

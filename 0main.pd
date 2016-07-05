@@ -1,4 +1,4 @@
-#N canvas 873 132 480 730 10;
+#N canvas 44 85 480 730 10;
 #X declare -stdpath moonlib;
 #X declare -stdpath hcs;
 #X declare -stdpath ggee;
@@ -175,7 +175,7 @@
 #X floatatom 721 466 5 0 100 0 - - -, f 5;
 #X msg 717 490 Jean-Marc \$1;
 #X obj 504 431 hsl 145 15 0 40 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 14400 1;
+-1 -1 0 1;
 #X obj 501 451 i;
 #X obj 719 398 hsl 145 15 0 40 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
@@ -490,7 +490,7 @@
 #X connect 26 0 18 0;
 #X coords 0 -1 1 1 120 60 1 100 300;
 #X restore 21 167 pd MEASURE;
-#N canvas 819 75 617 754 Session 1;
+#N canvas 819 75 617 754 Session 0;
 #X obj 113 73 r handSession;
 #X obj 113 98 symbol;
 #X obj 292 93 s handSession;
@@ -1129,7 +1129,7 @@
 #X connect 22 0 2 0;
 #X restore 20 600 pd grapheSession;
 #X obj 182 673 s grapheSession;
-#N canvas 119 98 590 762 visuGraphe 1;
+#N canvas 120 96 590 762 visuGraphe 0;
 #N canvas 5 75 450 300 listGraph 0;
 #X msg 67 123 1 \, 2 \, 3 \, 4 \, 5 \, 6 \, 7 \, 8;
 #X obj 67 146 t f f;
@@ -1191,7 +1191,7 @@
 #X restore 20 619 pd visuGraphe;
 #X msg 378 570 Guillaume;
 #X msg 383 642 Guillaume;
-#N canvas 282 481 450 379 LEDS 1;
+#N canvas 283 479 450 379 LEDS 0;
 #X obj 96 276 fruit/send fruit1;
 #X obj 130 168 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -1202,9 +1202,9 @@
 #X msg 96 238 c 10 c \$1 c \$2;
 #X msg 219 245 c 20 i \$1;
 #X obj 222 221 hsl 128 15 0 1023 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 1339 1;
+-1 -1 0 1;
 #X obj 222 142 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6000 1;
+-1 -1 0 1;
 #X obj 219 162 pow 3;
 #X obj 219 184 * 1023;
 #X obj 96 129 r LEDS;
@@ -1238,7 +1238,7 @@
 #X msg 335 427 Peggy;
 #X msg 137 625 Peggy;
 #X msg 102 640 Al1;
-#N canvas 125 95 768 702 Network 1;
+#N canvas 126 93 768 702 Network 0;
 #X obj 48 290 bng 15 250 50 0 clearOffset empty clearOffset 17 7 0
 10 -262144 -1 -1;
 #X obj 289 143 > 0;
