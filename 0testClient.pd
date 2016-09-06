@@ -1,96 +1,96 @@
-#N canvas 388 196 1048 459 10;
-#X obj 344 11 cnv 15 670 130 empty empty empty 20 12 0 14 -262130 -66577
+#N canvas 254 252 1048 590 10;
+#X obj 344 11 cnv 15 670 180 empty empty empty 20 12 0 14 -262130 -66577
 0;
 #X obj 21 23 cnv 15 170 60 empty empty empty 20 12 0 14 -261682 -66577
 0;
-#X obj 211 244 cnv 15 750 20 empty empty empty 20 12 0 14 -204786 -66577
+#X obj 211 334 cnv 15 750 20 empty empty empty 20 12 0 14 -204786 -66577
 0;
-#X obj 211 316 cnv 15 750 20 empty empty empty 20 12 0 14 -204786 -66577
+#X obj 211 406 cnv 15 750 20 empty empty empty 20 12 0 14 -204786 -66577
 0;
-#X obj 209 391 cnv 15 750 20 empty empty empty 20 12 0 14 -204786 -66577
+#X obj 209 481 cnv 15 750 20 empty empty empty 20 12 0 14 -204786 -66577
 0;
-#X obj 44 146 netsend;
+#X obj 44 236 netsend;
 #X msg 30 29 connect localhost 45451;
-#X obj 44 167 tgl 15 0 empty empty connected -30 20 0 10 -262144 -1
--1 0 1;
+#X obj 44 257 tgl 15 0 empty empty connected -30 20 0 10 -262144 -1
+-1 1 1;
 #X msg 50 59 disconnect;
-#X obj 83 175 route m w hc;
-#X floatatom 83 337 7 0 0 1 mesure - -, f 7;
-#X floatatom 106 298 7 0 0 1 weight - -, f 7;
-#X obj 226 204 list split 2;
-#X obj 226 226 unpack f f;
-#X floatatom 228 248 7 0 0 1 - - -, f 7;
-#X floatatom 283 247 7 0 0 1 - - -, f 7;
-#X floatatom 334 247 7 0 0 1 - - -, f 7;
-#X floatatom 383 247 7 0 0 1 - - -, f 7;
-#X obj 334 203 list split 3;
-#X obj 334 225 unpack f f f, f 17;
-#X floatatom 433 247 7 0 0 1 - - -, f 7;
-#X floatatom 488 247 7 0 0 1 - - -, f 7;
-#X floatatom 537 247 7 0 0 1 - - -, f 7;
-#X obj 488 203 list split 3;
-#X obj 488 225 unpack f f f, f 17;
-#X floatatom 587 247 7 0 0 1 - - -, f 7;
-#X floatatom 645 247 7 0 0 1 - - -, f 7;
-#X floatatom 694 247 7 0 0 1 - - -, f 7;
-#X obj 645 203 list split 3;
-#X obj 645 225 unpack f f f, f 17;
-#X floatatom 744 247 7 0 0 1 - - -, f 7;
-#X floatatom 799 247 7 0 0 1 - - -, f 7;
-#X floatatom 848 247 7 0 0 1 - - -, f 7;
-#X obj 799 202 list split 3;
-#X obj 799 225 unpack f f f, f 17;
-#X floatatom 898 247 7 0 0 1 - - -, f 7;
-#X obj 129 202 list split 14;
-#X floatatom 226 318 7 0 0 1 - - -, f 7;
-#X obj 129 226 list split 12;
-#X obj 226 276 list split 1;
-#X floatatom 770 321 7 0 0 1 - - -, f 7;
-#X floatatom 819 321 7 0 0 1 - - -, f 7;
-#X obj 770 277 list split 3;
-#X obj 770 299 unpack f f f, f 17;
-#X floatatom 869 321 7 0 0 1 - - -, f 7;
-#X floatatom 333 321 7 0 0 1 - - -, f 7;
-#X floatatom 382 321 7 0 0 1 - - -, f 7;
-#X floatatom 431 321 7 0 0 1 - - -, f 7;
-#X obj 333 299 unpack f f f f, f 25;
-#X floatatom 480 321 7 0 0 1 - - -, f 7;
-#X floatatom 552 321 7 0 0 1 - - -, f 7;
-#X floatatom 601 321 7 0 0 1 - - -, f 7;
-#X floatatom 650 321 7 0 0 1 - - -, f 7;
-#X obj 552 299 unpack f f f f, f 25;
-#X floatatom 699 321 7 0 0 1 - - -, f 7;
-#X obj 333 277 list split 4;
-#X obj 552 277 list split 4;
-#X floatatom 225 394 7 0 0 1 - - -, f 7;
-#X floatatom 273 394 7 0 0 1 - - -, f 7;
-#X floatatom 322 394 7 0 0 1 - - -, f 7;
-#X floatatom 371 394 7 0 0 1 - - -, f 7;
-#X floatatom 484 394 7 0 0 1 - - -, f 7;
-#X floatatom 533 394 7 0 0 1 - - -, f 7;
-#X floatatom 582 394 7 0 0 1 - - -, f 7;
-#X obj 484 372 unpack f f f f, f 25;
-#X floatatom 631 394 7 0 0 1 - - -, f 7;
-#X obj 484 350 list split 4;
-#X obj 225 350 list split 5;
-#X obj 225 372 unpack f f f f f, f 33;
-#X floatatom 420 394 7 0 0 1 - - -, f 7;
+#X obj 83 265 route m w hc;
+#X floatatom 83 427 7 0 0 1 mesure - -, f 7;
+#X floatatom 106 388 7 0 0 1 weight - -, f 7;
+#X obj 226 294 list split 2;
+#X obj 226 316 unpack f f;
+#X floatatom 228 338 7 0 0 1 - - -, f 7;
+#X floatatom 283 337 7 0 0 1 - - -, f 7;
+#X floatatom 334 337 7 0 0 1 - - -, f 7;
+#X floatatom 383 337 7 0 0 1 - - -, f 7;
+#X obj 334 293 list split 3;
+#X obj 334 315 unpack f f f, f 17;
+#X floatatom 433 337 7 0 0 1 - - -, f 7;
+#X floatatom 488 337 7 0 0 1 - - -, f 7;
+#X floatatom 537 337 7 0 0 1 - - -, f 7;
+#X obj 488 293 list split 3;
+#X obj 488 315 unpack f f f, f 17;
+#X floatatom 587 337 7 0 0 1 - - -, f 7;
+#X floatatom 645 337 7 0 0 1 - - -, f 7;
+#X floatatom 694 337 7 0 0 1 - - -, f 7;
+#X obj 645 293 list split 3;
+#X obj 645 315 unpack f f f, f 17;
+#X floatatom 744 337 7 0 0 1 - - -, f 7;
+#X floatatom 799 337 7 0 0 1 - - -, f 7;
+#X floatatom 848 337 7 0 0 1 - - -, f 7;
+#X obj 799 292 list split 3;
+#X obj 799 315 unpack f f f, f 17;
+#X floatatom 898 337 7 0 0 1 - - -, f 7;
+#X obj 129 292 list split 14;
+#X floatatom 226 408 7 0 0 1 - - -, f 7;
+#X obj 129 316 list split 12;
+#X obj 226 366 list split 1;
+#X floatatom 770 411 7 0 0 1 - - -, f 7;
+#X floatatom 819 411 7 0 0 1 - - -, f 7;
+#X obj 770 367 list split 3;
+#X obj 770 389 unpack f f f, f 17;
+#X floatatom 869 411 7 0 0 1 - - -, f 7;
+#X floatatom 333 411 7 0 0 1 - - -, f 7;
+#X floatatom 382 411 7 0 0 1 - - -, f 7;
+#X floatatom 431 411 7 0 0 1 - - -, f 7;
+#X obj 333 389 unpack f f f f, f 25;
+#X floatatom 480 411 7 0 0 1 - - -, f 7;
+#X floatatom 552 411 7 0 0 1 - - -, f 7;
+#X floatatom 601 411 7 0 0 1 - - -, f 7;
+#X floatatom 650 411 7 0 0 1 - - -, f 7;
+#X obj 552 389 unpack f f f f, f 25;
+#X floatatom 699 411 7 0 0 1 - - -, f 7;
+#X obj 333 367 list split 4;
+#X obj 552 367 list split 4;
+#X floatatom 225 484 7 0 0 1 - - -, f 7;
+#X floatatom 273 484 7 0 0 1 - - -, f 7;
+#X floatatom 322 484 7 0 0 1 - - -, f 7;
+#X floatatom 371 484 7 0 0 1 - - -, f 7;
+#X floatatom 484 484 7 0 0 1 - - -, f 7;
+#X floatatom 533 484 7 0 0 1 - - -, f 7;
+#X floatatom 582 484 7 0 0 1 - - -, f 7;
+#X obj 484 462 unpack f f f f, f 25;
+#X floatatom 631 484 7 0 0 1 - - -, f 7;
+#X obj 484 440 list split 4;
+#X obj 225 440 list split 5;
+#X obj 225 462 unpack f f f f f, f 33;
+#X floatatom 420 484 7 0 0 1 - - -, f 7;
 #X obj 202 56 list prepend send;
 #X obj 202 78 list trim;
 #X obj 202 32 r testClient-toServer;
-#X obj 623 160 s testClient-toServer;
+#X obj 603 221 s testClient-toServer;
 #X msg 355 33 getMesure;
 #X msg 422 33 getWeight;
 #X msg 487 34 handCapture;
 #X msg 570 53 light \$1;
 #X obj 573 33 hsl 128 15 0 1 0 0 empty empty light(0-1) -2 -8 0 10
 -262144 -1 -1 0 1;
-#X msg 729 84 leds \$1 \$2;
-#X obj 729 60 pack f f;
-#X obj 749 39 t b f;
-#X obj 749 22 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X msg 757 87 leds \$1 \$2;
+#X obj 757 63 pack f f;
+#X obj 777 42 t b f;
+#X obj 777 25 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 729 22 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 757 25 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 832 17 hradio 10 1 0 16 empty empty empty 0 -8 0 10 -262144
 -1 -1 5;
@@ -100,6 +100,16 @@
 #X obj 832 91 pack f f;
 #X obj 832 70 f;
 #X msg 832 113 select \$1 \$2;
+#X obj 353 87 hradio 15 1 0 11 empty empty PROGRESS 0 -8 0 10 -262144
+-1 -1 2;
+#X msg 353 112 progress \$1;
+#X text 424 112 10-leds progress bar;
+#X obj 606 90 hsl 128 15 0 1 0 0 empty empty light(0-1)_+_temps(ms)
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 603 110 light \$1 2000;
+#X obj 634 147 hsl 128 15 0 1 0 0 empty empty light2(0-1)_[+_temps(ms)]
+-2 -8 0 10 -262144 -1 -1 0 1;
+#X msg 631 167 light2 \$1 200;
 #X connect 5 0 7 0;
 #X connect 5 1 9 0;
 #X connect 6 0 5 0;
@@ -185,3 +195,9 @@
 #X connect 87 0 89 0;
 #X connect 88 0 87 0;
 #X connect 89 0 73 0;
+#X connect 90 0 91 0;
+#X connect 91 0 73 0;
+#X connect 93 0 94 0;
+#X connect 94 0 73 0;
+#X connect 95 0 96 0;
+#X connect 96 0 73 0;
