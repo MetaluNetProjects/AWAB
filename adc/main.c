@@ -14,7 +14,7 @@ t_delay swapSelDelay;
 #define SET_PWM(pwm,val) do{ CCP##pwm##CONbits.DC##pwm##B1 = val&2;  CCP##pwm##CONbits.DC##pwm##B0 = val&1; CCPR##pwm##L=val>>2; } while(0)
 
 unsigned char sel1=0, sel2=0, selSwap=0;
-unsigned int swapSelPeriod=20000;
+unsigned int swapSelPeriod=13000;
 
 void setup(void) {	
 //----------- Setup ----------------
@@ -48,11 +48,13 @@ void setup(void) {
 	analogSelect(1,WEIGHT);
 	pinModeDigitalOut(LEDA);
 	pinModeDigitalOut(LEDB);
-	pinModeDigitalOut(LAMP);
+	pinModeDigitalOut(LAMP1);
+	pinModeDigitalOut(LAMP2);
 	
-	CCP1CON = 0b00001100; /* single PWM active high*/
+	CCP1CON = CCP4CON = 0b00001100; /* CC1 & CCP4 = single PWM active high*/
 	PSTR1CON=0; PSTR1CONbits.STR1B=1;
 	SET_PWM(1,0);
+	SET_PWM(4,0);
 	
 	delayStart(swapSelDelay, swapSelPeriod); 	// init the mainDelay to 5 ms
 	
@@ -137,16 +139,6 @@ void fraiseReceive() // receive raw bytes
  	if(c == 100) {
  	    sel1 = fraiseGetChar();
  	    sel2 = fraiseGetChar();
- 	    //select(sel1,sel2);
-  	    /*digitalWrite(SELA0, c & 1);
- 	    digitalWrite(SELA1, c & 2);
- 	    digitalWrite(SELA2, c & 4);
- 	    digitalWrite(SELA3, c & 8);
-
-  	    digitalWrite(SELB0, c & 16);
- 	    digitalWrite(SELB1, c & 32);
- 	    digitalWrite(SELB2, c & 64);
- 	    digitalWrite(SELB3, c & 128);*/
     } 
     else if(c == 101) {
        swapSelPeriod = fraiseGetInt(); 
@@ -154,6 +146,10 @@ void fraiseReceive() // receive raw bytes
     else if(c == 20) {
  	    i = fraiseGetInt();
  	    SET_PWM(1,i);
+ 	}
+    else if(c == 21) {
+ 	    i = fraiseGetInt();
+ 	    SET_PWM(4,i);
  	}
  	else if(c == 10) {
  	    c = fraiseGetChar();

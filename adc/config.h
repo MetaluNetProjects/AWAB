@@ -16,7 +16,8 @@
 
 #define SELOUT K5
 
-#define LAMP K9
+#define LAMP1 K9
+#define LAMP2 MB1
 #define LEDA K11
 #define LEDB K12
 
