@@ -1,4 +1,4 @@
-update=mer. 22 juin 2016 15:31:29 CEST
+update=mar. 06 sept. 2016 18:56:47 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -32,7 +32,7 @@ version=1
 PageLayoutDescrFile=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=
+NetFmtName=PcbnewAdvanced
 SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 RptD_X=0

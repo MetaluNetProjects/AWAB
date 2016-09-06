@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = lun. 30 mai 2016 14:51:04 CEST
+Cmp-Mod V01 Created by Cvpcb (2014-jul-16 BZR unknown)-product   date = mar. 06 sept. 2016 18:48:48 CEST
 
 BeginCmp
 TimeStamp = /574C3E00;
@@ -12,6 +12,13 @@ TimeStamp = /574C2E39;
 Reference = C2;
 ValeurCmp = 100n;
 IdModule  = Capacitors_ThroughHole:C_Rect_L7_W2_P5;
+EndCmp
+
+BeginCmp
+TimeStamp = /57CEF5FA;
+Reference = C3;
+ValeurCmp = 10u;
+IdModule  = Capacitors_ThroughHole:C_Radial_D5_L11_P2;
 EndCmp
 
 BeginCmp
@@ -66,7 +73,7 @@ EndCmp
 BeginCmp
 TimeStamp = /574C2C5D;
 Reference = R5;
-ValeurCmp = 10k;
+ValeurCmp = 150k;
 IdModule  = Resistors_ThroughHole:Resistor_Horizontal_RM7mm;
 EndCmp
 
