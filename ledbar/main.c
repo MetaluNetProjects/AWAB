@@ -7,11 +7,11 @@
 #include <fruit.h>
 
 t_delay mainDelay;
-char progress=0;
+char progress = 0;
 
 #define FOREACH(F) F(1);F(2);F(3);F(4);F(5);F(6);F(7);F(8);F(9);F(10);
-#define LED_INIT(n) pinModeDigitalOut(LED##n); digitalClear(LED##n)
-#define LED_UPDATE(n) if(progress >= n) digitalSet(LED##n); else digitalClear(LED##n)
+#define LED_INIT(n) pinModeDigitalOut(LED##n); digitalSet(LED##n)
+#define LED_UPDATE(n) if(progress >= n) digitalClear(LED##n); else digitalSet(LED##n)
 
 void setup(void) {		
 //----------- Setup ----------------
