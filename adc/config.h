@@ -1,7 +1,7 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
-#define ANALOG_FILTER 5 
+#define ANALOG_FILTER 3 
 #define ANALOG_THRESHOLD 0
 
 #define SELA0 MAEN

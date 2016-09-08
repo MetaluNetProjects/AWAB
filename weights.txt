@@ -1,0 +1,26 @@
+tel samsung : 140g
+rouleau soudure : 278g
+bouteille eau :723g (pour l'instant...)
+hp altec (avec cables) : 885g
+alim12v : 2761g
+alim+hp : 3646g
+
+avec intercalaires offset 5200
+400 140;
+1600 723;
+1790 885;
+3010 2761;
+3400 3646;
+
+
+sans intercalaire : offset 4570
+
+
+40 88;
+490 278;
+1400 1168;
+2500 2745;
+2900 3913;
+
+avec :
+

@@ -1,4 +1,4 @@
-#N canvas 33 240 687 635 10;
+#N canvas 533 75 687 635 10;
 #X obj 253 55 table \$0-mes;
 #X obj 252 76 table \$0-real;
 #X obj 64 48 bng 15 250 50 0 empty empty update 17 7 0 10 -262144 -1
@@ -43,7 +43,7 @@
 #X obj 264 168 s \$0-mes;
 #X obj 252 189 s \$0-real;
 #X obj 252 124 r \$0-nbPairs;
-#N canvas 7 75 675 364 interpole 0;
+#N canvas 8 75 675 364 interpole 0;
 #N canvas 7 75 450 383 find-mes-index 0;
 #X obj 132 15 inlet;
 #X obj 132 201 tabread \$0-mes;
@@ -149,10 +149,18 @@
 #X obj 447 260 r \$0-Wmin;
 #X obj 418 260 -;
 #X obj 418 282 /;
-#X obj 418 304 * 1000;
 #X obj 418 353 outlet real-estim;
 #X obj 65 492 / 999;
 #X obj 418 329 tabreadl \$0-conv;
+#X obj 418 304 * 999;
+#X obj 499 489 tabread \$0-conv;
+#X obj 432 110 tabread \$0-mes;
+#X obj 526 111 tabread \$0-real;
+#X floatatom 432 132 5 0 0 0 - - -, f 5;
+#X floatatom 526 133 5 0 0 0 - - -, f 5;
+#X floatatom 432 67 5 0 0 0 - - -, f 5;
+#X obj 432 30 hradio 15 1 0 16 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
 #X connect 2 0 44 0;
 #X connect 3 0 4 0;
 #X connect 3 1 38 0;
@@ -196,7 +204,7 @@
 #X connect 29 0 30 0;
 #X connect 31 0 36 1;
 #X connect 32 0 23 0;
-#X connect 33 0 66 0;
+#X connect 33 0 65 0;
 #X connect 33 1 58 1;
 #X connect 35 0 37 1;
 #X connect 36 0 37 0;
@@ -223,7 +231,12 @@
 #X connect 60 0 63 1;
 #X connect 61 0 62 1;
 #X connect 62 0 63 0;
-#X connect 63 0 64 0;
-#X connect 64 0 67 0;
-#X connect 66 0 36 0;
-#X connect 67 0 65 0;
+#X connect 63 0 67 0;
+#X connect 65 0 36 0;
+#X connect 66 0 64 0;
+#X connect 67 0 66 0;
+#X connect 69 0 71 0;
+#X connect 70 0 72 0;
+#X connect 73 0 69 0;
+#X connect 73 0 70 0;
+#X connect 74 0 73 0;

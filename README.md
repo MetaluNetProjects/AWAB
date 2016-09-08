@@ -65,5 +65,9 @@ commands :
 
 - `leds LED1(bool:0/1) LED2(bool:0/1)` : set leds state.
  
+- `clearOffset` : clear mesure offset.
+
+- `clearWeightOffset` : clear weight mesure offset
+
 
 
