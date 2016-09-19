@@ -67,7 +67,9 @@ commands :
  
 - `clearOffset` : clear mesure offset.
 
-- `clearWeightOffset` : clear weight mesure offset
+- `clearWeightOffset` : clear weight mesure offset.
+
+- `progress P(int:0 to 10)` : switch progress bar leds 1 to P on.
 
 
 
