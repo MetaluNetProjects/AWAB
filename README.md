@@ -39,7 +39,7 @@ then logout and re-login.
 ##Running
 1) launch : `pd 0main.pd`
    if you want to specify network tcp port (intead of default 45451) :
-   `pd -send "NETWORK_PORT [port] -open 0main.pd"`
+   `pd -send "NETWORK_PORT [port]" -open 0main.pd`
 
 2) for testing : `pd 0testClient.pd` ; connect ; try commands.
 
