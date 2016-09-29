@@ -7,9 +7,11 @@
 
 #include <fruit.h>
 #include <analog.h>
+#include <hx711.h>
 
 t_delay mainDelay;
 t_delay swapSelDelay;
+t_delay longDelay;
 
 #define SET_PWM(pwm,val) do{ CCP##pwm##CONbits.DC##pwm##B1 = val&2;  CCP##pwm##CONbits.DC##pwm##B0 = val&1; CCPR##pwm##L=val>>2; } while(0)
 
@@ -56,7 +58,10 @@ void setup(void) {
 	SET_PWM(1,0);
 	SET_PWM(4,0);
 	
-	delayStart(swapSelDelay, swapSelPeriod); 	// init the mainDelay to 5 ms
+	hx711Init(0);        // init hx711 module, gainA=128
+	
+	delayStart(swapSelDelay, swapSelPeriod); 	// init swapSelDelay
+	delayStart(longDelay, 100000); 	// init the longDelay to 100 ms
 	
 }
 
@@ -92,7 +97,11 @@ unsigned char lastChan=0;
 void loop() {
 // ---------- Main loop ------------
     unsigned char chan;
+    
 	fraiseService();	// listen to Fraise events
+
+	hx711Service(); // hx711 service routine
+
 	chan = analogService();	// analog management routine
 	
 	if(chan!=lastChan) {
@@ -110,11 +119,12 @@ void loop() {
 		analogSend();		// send analog channels that changed
 	}
 
-	/*if(delayFinished(swapSelDelay)) // when swapSelDelay triggers :
+	if(delayFinished(longDelay)) // when mainDelay triggers :
 	{
-		delayStart(swapSelDelay, swapSelPeriod); 	// re-init swapSelDelay
-		swapSelect();
-	}*/
+		delayStart(longDelay, 100000); 	// re-init longDelay
+		printf("C W %ld %ld\n", hx711Read(0), hx711Read(1)); //send weights 
+	}
+
 }
 
 // Receiving
